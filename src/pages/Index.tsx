@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { MapPin, Mail, Github, Linkedin, Code, GraduationCap, Globe, Coffee } from "lucide-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState("about");
@@ -59,6 +60,12 @@ const Index = () => {
                   {section}
                 </button>
               ))}
+              <Link 
+                to="/friends" 
+                className="text-purple-600 hover:text-purple-800 font-medium transition-colors"
+              >
+                For Friends 😉
+              </Link>
             </div>
           </div>
         </div>
