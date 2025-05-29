@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { MapPin, Camera, PartyPopper, Calendar, Coffee, Pizza, GameController2, LogOut, Heart } from "lucide-react";
+import { MapPin, Camera, PartyPopper, Calendar, Coffee, Pizza, Gamepad2, LogOut, Heart } from "lucide-react";
 import { useAuth } from '@/contexts/AuthContext';
 import FriendsLogin from '@/components/FriendsLogin';
 
@@ -181,7 +181,7 @@ const Friends = () => {
         <Card className="bg-white/90 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <GameController2 className="w-5 h-5" />
+              <Gamepad2 className="w-5 h-5" />
               Gaming Corner 🎮
             </CardTitle>
             <CardDescription>
@@ -190,7 +190,7 @@ const Friends = () => {
           </CardHeader>
           <CardContent>
             <div className="text-center py-8">
-              <GameController2 className="w-16 h-16 mx-auto text-purple-400 mb-4" />
+              <Gamepad2 className="w-16 h-16 mx-auto text-purple-400 mb-4" />
               <p className="text-gray-600">
                 Currently addicted to: <span className="font-semibold">Everything</span> 😅
               </p>
